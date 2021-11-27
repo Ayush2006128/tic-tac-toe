@@ -1,0 +1,46 @@
+MDFloatLayout:
+    MDGridLayout:
+        cols: 3
+        rows: 3
+        size_hint: (1,0.5)
+        pos_hint: {"center_x":0.5, "center_y":0.7}
+
+        Button:
+            id: btn1
+            on_press: app.press(btn1)
+
+        Button:
+            id: btn2
+            on_press: app.press(btn2)
+
+        Button:
+            id: btn3
+            on_press: app.press(btn3)
+        Button:
+            id: btn4
+            on_press: app.press(btn4)
+        Button:
+            id: btn5
+            on_press: app.press(btn5)
+        Button:
+            id: btn6
+            on_press: app.press(btn6)
+        Button:
+            id: btn7
+            on_press: app.press(btn7)
+        Button:
+            id: btn8
+            on_press: app.press(btn8)
+        Button:
+            id: btn9
+            on_press: app.press(btn9)
+    MDLabel:
+        id: scinfo
+        text: "X GOES FIRST!"
+        pos_hint: {"center_x":0.91, "center_y":0.15}
+
+    MDRaisedButton:
+        id: restart
+        text: "restart"
+        pos_hint: {"center_x":0.47, "center_y":0.05}
+        on_release: app.restart()
